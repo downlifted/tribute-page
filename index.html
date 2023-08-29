@@ -58,7 +58,7 @@
   <!-- Third Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,6 +70,9 @@
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -86,12 +89,12 @@
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
-    <p>        <h1>Shoutbox</h1>
-            <script src="https://www.shoutbox.com/chat/16765"></script>
-        </section>.</p>
+    <h2>Column 1</h2>
+    <p><script src="https://www.shoutbox.com/chat/16765"></script></p>
   </div>
   <div class="column" style="background-color:#bbb;">
-<h1>Biography</h1>
+    <h2>Column 2</h2>
+    <p><h1>Biography</h1>
        Steven Paul “Steve” Jobs was an American information
 technology entrepreneur and inventor. He was the cofounder,
 chairman, and CEO of Apple Inc, CEO and largest shareholder
@@ -101,14 +104,12 @@ microcomputer revolution of the 1970s, along with Apple
 co-founder Steve Wozniak. “Creative entrepreneur whose
 passion for perfection and ferocious drive revolutionized six
 industries: personal computers, animated movies, music,
-phones, tablet computing, and digital publishing.</p>
+phones, tablet computing, and digital publishing.</p>.</p>
   </div>
 </div>
 
 </body>
 </html>
-
-
 
         
         

@@ -87,13 +87,31 @@ phones, tablet computing, and digital publishing.</p>
       <div class="row">
         <div class="two columns"><br></div>
         <div class="eight columns" id="fourth-div-content">
-          <h1 id="fourth-div-title">Memories:</h1>
-          <h5 id="fourth-div-text">
-           <header>
-      <body>
+          <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Tribute</title>
+</head>
+<body>
     <main>
         <section class="memory-form">
-<script src="airtable.js"></script>
+            <h2>Share a Memory</h2>
+            <form id="memory-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="memory">Your Memory:</label>
+                <textarea id="memory" name="memory" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="memory-container">
+            <h2>Memories</h2>
+            <div id="memories-list"></div>
+        </section>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
     </main>

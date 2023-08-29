@@ -57,7 +57,6 @@
 
   <!-- Third Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,22 +66,20 @@
   box-sizing: border-box;
 }
 
-/* Create two equal columns that floats next to each other */
+/* Create two equal columns that float next to each other */
+.row {
+  display: flex;
+}
+
 .column {
-  float: left;
-  width: 50%;
+  flex: 50%;
 }
 
-/* Clear floats after the columns */
-.row:after {
+/* Clear floats */
+.row::after {
   content: "";
-  display: table;
   clear: both;
-}
-
-/* Set the width of the container */
-.container {
-  width: 800px;
+  display: table;
 }
 </style>
 </head>
@@ -107,15 +104,13 @@ microcomputer revolution of the 1970s, along with Apple
 co-founder Steve Wozniak. “Creative entrepreneur whose
 passion for perfection and ferocious drive revolutionized six
 industries: personal computers, animated movies, music,
-phones, tablet computing, and digital publishing.</p>.</p>
+phones, tablet computing, and digital publishing.</p>
   </div>
 </div>
 
 </body>
-
-
 </html>
-</html>
+
 
         
         

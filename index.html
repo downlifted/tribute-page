@@ -89,13 +89,31 @@ phones, tablet computing, and digital publishing.</p>
         <div class="eight columns" id="fourth-div-content">
           <h1 id="fourth-div-title">Memories:</h1>
           <h5 id="fourth-div-text">
-            <form action="https://formspree.io/f/xjvqwnbl" method="POST">
-    <input type="hidden" name="_subject" value="Memory Submission">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="memory">Your Memory:</label>
-    <textarea id="memory" name="memory" required></textarea>
-    <button type="submit">Submit</button>
+           <header>
+        <h1>Alex's Tribute</h1>
+    </header>
+    <main>
+        <section class="memory-form">
+            <h2>Share a Memory</h2>
+            <form id="memory-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="memory">Your Memory:</label>
+                <textarea id="memory" name="memory" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="memory-container">
+            <h2>Memories</h2>
+            <div id="memories-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Alex's Tribute</p>
+    </footer>
+    <!-- Add your JavaScript files here -->
+</body>
+</html>
 </form>
 
           </h5>

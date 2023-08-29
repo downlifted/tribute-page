@@ -57,15 +57,45 @@
 
   <!-- Third Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- <div class="container">
-    <div class="column" style="display: inline-block;">
-        <h1>Shoutbox</h1>
+
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Two Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <p>        <h1>Shoutbox</h1>
         <section class="memory-form">
             <script src="https://www.shoutbox.com/chat/16765"></script>
-        </section>
-    </div>
-    <div class="column" style="display: inline-block;">
-        <h1>Biography</h1>
+        </section>.</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+<h1>Biography</h1>
         <h5 id="third-div-text">Steven Paul “Steve” Jobs was an American information
 technology entrepreneur and inventor. He was the cofounder,
 chairman, and CEO of Apple Inc, CEO and largest shareholder
@@ -76,9 +106,16 @@ co-founder Steve Wozniak. “Creative entrepreneur whose
 passion for perfection and ferocious drive revolutionized six
 industries: personal computers, animated movies, music,
 phones, tablet computing, and digital publishing.</p>
-          </h5>
-    </div>
+  </div>
 </div>
+
+</body>
+</html>
+
+
+
+        
+        
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

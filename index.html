@@ -93,19 +93,40 @@ phones, tablet computing, and digital publishing.</p>
       <body>
     <main>
         <section class="memory-form">
-            <h2>Share a Memory</h2>
-            <form id="memory-form">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="memory">Your Memory:</label>
-                <textarea id="memory" name="memory" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-        <section class="memory-container">
-            <h2>Memories</h2>
-            <div id="memories-list"></div>
-        </section>
+<javascript>
+            const apiKey = 'YOUR_AIRTABLE_API_KEY';
+const baseId = 'YOUR_AIRTABLE_BASE_ID';
+const tableName = 'YOUR_TABLE_NAME';
+
+const submitMemory = async (name, memory) => {
+    const url = `https://api.airtable.com/v0/${baseId}/${tableName}`;
+    const data = {
+        records: [
+            {
+                fields: {
+                    Name: name,
+                    Memory: memory,
+                },
+            },
+        ],
+    };
+
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+        console.log('Memory submitted successfully');
+    } else {
+        console.error('Failed to submit memory');
+    }
+};
+</javascript>
     </main>
     </footer>
     <!-- Add your JavaScript files here -->

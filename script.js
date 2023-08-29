@@ -12,9 +12,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
-
 const memoryForm = document.getElementById('memory-form');
 const memoryContainer = document.getElementById('memories-list');
 
